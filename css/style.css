@@ -1,0 +1,230 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+* {
+    /* The width of an element will be the size of its border box, not its content box (which is the normal default). */
+    box-sizing: border-box;
+}
+
+main {
+    /* Make sure the browser knows how to display the HTML5 main element. */
+    display: block;
+}
+
+
+/* LAYOUT */
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#portfolio,
+#about,
+#contact {
+    padding: 3rem 0;
+}
+
+#intro .container,
+#portfolio .container,
+#about .container,
+#contact .container,
+footer .container {
+    padding: 0 0.5em;
+}
+
+#intro {
+    position: relative;
+}
+
+#intro .container {
+    position: absolute;
+    top: 13em;
+}
+
+.piece-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.piece {
+    flex-basis: 100%;
+    margin: 1rem 0 3rem 0;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer {
+    padding: 1em 0;
+}
+
+
+/* TYPOGRAPHY */
+
+body, button {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
+
+.header-brand {
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.myname {
+    text-transform: uppercase;
+}
+
+.last-name {
+    font-weight: 700;
+}
+
+#intro {
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.piece-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.piece-description {
+    margin-bottom: 1rem;
+}
+
+.tech-lead {
+    font-weight: 700;
+}
+
+.contact-icons a {
+    font-size: 1.5em;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+
+/* COLOUR SCHEME & BORDERS */
+
+.navbar {
+    background-color: #000;
+}
+
+.navbar a,
+.navbar button,
+#intro {
+    color: #fff;
+}
+
+#about {
+    background-color: #eee;
+}
+
+.piece-button {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 0.2rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 0 0;
+}
+
+.piece-button:hover {
+    background-color: #ddd;
+}
+
+.contact-icons a {
+    color: #000;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* NAVIGATION */
+
+.navbar-toggle {
+    font-size: 1.5em;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+nav {
+    flex-basis: 100%;
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    border-top: 1px solid #222;
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    padding: 1rem 0.5rem;
+}
+
+nav a:hover {
+    background-color: #222;
+    transition: background-color 0.3s;
+}
+
+
+/* IMAGES & VIDEOS */
+
+img, video {
+    width: 100%;
+}
+
+#intro img {
+    height: 30em;
+    object-fit: cover;
+}
+
+
+/* MEDIA QUERIES */
