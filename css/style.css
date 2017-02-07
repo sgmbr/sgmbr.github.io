@@ -43,7 +43,12 @@ header {
 #portfolio,
 #about,
 #contact {
-    padding: 3rem 0;
+    padding: 7rem 0;
+}
+
+#about,
+#contact {
+    padding-bottom: 12rem;
 }
 
 #intro .container,
@@ -70,7 +75,7 @@ footer .container {
 
 .piece {
     flex-basis: 100%;
-    padding: 0 1rem 3rem 1rem;
+    padding: 0 1rem 5rem 1rem;
 }
 
 .contact-icons {
@@ -116,10 +121,11 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
     text-transform: uppercase;
     font-weight: 900;
-    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 5rem;
 }
 
 p {
@@ -140,8 +146,13 @@ footer p {
     font-weight: 700;
 }
 
+.about-text {
+    font-size: 1.25em;
+    line-height: 1.5;
+}
+
 .contact-icons a {
-    font-size: 1.5em;
+    font-size: 3em;
     margin: 0 0.5em;
     cursor: pointer;
 }
@@ -159,8 +170,22 @@ header {
     color: #fff;
 }
 
+#portfolio {
+    color: #666;
+}
+
 #about {
     background-color: #eee;
+}
+
+#contact {
+    background-color: #666;
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
 }
 
 .piece-button {
@@ -177,11 +202,6 @@ header {
 }
 
 .contact-icons a {
-    color: #000;
-}
-
-footer {
-    background-color: #000;
     color: #fff;
 }
 
@@ -212,7 +232,6 @@ nav li {
 nav a {
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: 700;
     display: block;
     padding: 1rem 0.5rem;
 }
@@ -232,6 +251,22 @@ img, video {
 #intro img {
     height: 30rem;
     object-fit: cover;
+}
+
+.piece-image {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.piece-image:hover {
+    opacity: 0.8;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 13rem;
+    display: block;
+    margin: 0 auto 3rem auto;
 }
 
 
@@ -277,10 +312,6 @@ img, video {
         font-size: 1.5em;
     }
 
-    h2,
-    .contact-icons a {
-        font-size: 2em;
-    }
 
     /* NAVIGATION */
 
@@ -319,6 +350,11 @@ img, video {
 
         .container {
             width: 72rem;
+        }
+
+        .about-text {
+            width: 47rem;
+            margin: auto;
         }
 
 }
