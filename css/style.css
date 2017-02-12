@@ -157,6 +157,11 @@ footer p {
     cursor: pointer;
 }
 
+.piece-button {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 /* COLOUR SCHEME & BORDERS */
 
@@ -189,16 +194,20 @@ footer {
 }
 
 .piece-button {
-    background-color: #fff;
-    border: 2px solid #000;
-    border-radius: 0.2rem;
+    background-color: #ddd;
+    color: #666;
+    border: none;
+    border-radius: 0.3rem;
     outline: none;
     padding: 0.5rem 1rem;
     margin-right: 1rem;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 
 .piece-button:hover {
-    background-color: #ddd;
+    background-color: #999;
+    color: #fff;
 }
 
 .contact-icons a {
@@ -234,11 +243,11 @@ nav a {
     text-decoration: none;
     display: block;
     padding: 1rem 0.5rem;
+    transition: 0.5s ease;
 }
 
 nav a:hover {
-    background-color: #222;
-    transition: background-color 0.3s;
+    background-color: #333;
 }
 
 
