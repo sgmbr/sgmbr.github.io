@@ -322,6 +322,17 @@ img, video {
     }
 
 
+    /* COLOUR SCHEME & BORDERS */
+
+    header {
+        background-color: rgba(0, 0, 0, 0);
+        transition: 0.3s ease;
+    }
+
+    .sticky {
+        background-color: #000;
+    }
+
     /* NAVIGATION */
 
     .navbar-toggle {
