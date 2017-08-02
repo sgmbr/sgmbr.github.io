@@ -375,6 +375,7 @@ img, video {
         .about-text {
             width: 47rem;
             margin: auto;
+            margin-bottom: 1rem;
         }
 
 }
